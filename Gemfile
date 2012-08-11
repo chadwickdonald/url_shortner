@@ -4,9 +4,13 @@ gem 'rails', '3.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :development, :test do
+	gem 'sqlite3'
+end
 
-gem 'sqlite3'
-
+group :production do
+	gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -38,3 +42,4 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem "friendly_id", "~> 4.0.0.beta8"
+gem "zurb-foundation", :group => :assets

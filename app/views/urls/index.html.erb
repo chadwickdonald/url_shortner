@@ -1,5 +1,5 @@
-<h1>Welcome to url.shortenizer!</h1>
+<h3>type in a url</h3>
  <%= form_for @url do |f| %>
-  <%= f.text_field :original %><br />
+  <%= f.text_field :original, :value => "http://", :style=>'width: 300px;'%><br />
   <%= f.submit %>
 <% end %>

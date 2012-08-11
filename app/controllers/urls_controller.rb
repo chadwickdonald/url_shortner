@@ -26,7 +26,6 @@ class UrlsController < ApplicationController
 
 	def match 
 		@url = Url.find(params[:shortened])
-		#@url = Url.find
 		redirect_to @url.original
 	end
 
