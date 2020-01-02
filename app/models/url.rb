@@ -7,4 +7,10 @@ class Url < ActiveRecord::Base
 		something = 'something'
 		Rails.logger.info "---something: #{something}"
 	end
+
+	def test_method
+		Rails.logger.info "hi"
+		// does nothing
+	end
+	
 end
