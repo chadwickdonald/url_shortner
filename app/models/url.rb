@@ -3,9 +3,9 @@ class Url < ActiveRecord::Base
 	friendly_id :shortened
 	attr_accessible :original, :shortened
 
-	def print_something
-		something = 'something'
-		Rails.logger.info "---something: #{something}"
+	def test_method
+		Rails.logger.info "hi"
+		// does nothing
 	end
 
 	def test_method
